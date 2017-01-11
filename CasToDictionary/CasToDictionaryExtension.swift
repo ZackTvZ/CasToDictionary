@@ -9,7 +9,7 @@
 import UIKit
 
 
-extension NSObject{
+public extension NSObject{
     
     func castToDictionary() -> NSMutableDictionary{
         let objectDIC: NSMutableDictionary = NSMutableDictionary()
@@ -51,7 +51,7 @@ extension NSObject{
 }
 
 
-extension Collection{
+public extension Collection{
     
     func castToDictionary() -> [Any]{
         var objectDICs: [Any] = []
