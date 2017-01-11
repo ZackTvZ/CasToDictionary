@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'CasToDictionary'
-s.version          = '0.0.3'
+s.version          = '0.0.4'
 s.summary          = 'Easy Cast to dictionary from a object.'
 
 s.description      = <<-DESC
