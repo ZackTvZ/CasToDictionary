@@ -10,6 +10,7 @@
 		B29692781E24EE4A00654A17 /* CasToDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B296926E1E24EE4A00654A17 /* CasToDictionary.framework */; };
 		B296927D1E24EE4A00654A17 /* CasToDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B296927C1E24EE4A00654A17 /* CasToDictionaryTests.swift */; };
 		B296927F1E24EE4A00654A17 /* CasToDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = B29692711E24EE4A00654A17 /* CasToDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B29692891E25D14700654A17 /* CasToDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29692881E25D14700654A17 /* CasToDictionaryExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B29692771E24EE4A00654A17 /* CasToDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CasToDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B296927C1E24EE4A00654A17 /* CasToDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasToDictionaryTests.swift; sourceTree = "<group>"; };
 		B296927E1E24EE4A00654A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29692881E25D14700654A17 /* CasToDictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CasToDictionaryExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B29692711E24EE4A00654A17 /* CasToDictionary.h */,
+				B29692881E25D14700654A17 /* CasToDictionaryExtension.swift */,
 				B29692721E24EE4A00654A17 /* Info.plist */,
 			);
 			path = CasToDictionary;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B296926D1E24EE4A00654A17 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					B29692761E24EE4A00654A17 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29692891E25D14700654A17 /* CasToDictionaryExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		B29692831E24EE4A00654A17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacktvz.CasToDictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		B29692841E24EE4A00654A17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		B29692861E24EE4A00654A17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CasToDictionaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacktvz.CasToDictionaryTests;
@@ -367,6 +376,7 @@
 		B29692871E24EE4A00654A17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CasToDictionaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacktvz.CasToDictionaryTests;
@@ -394,6 +404,7 @@
 				B29692841E24EE4A00654A17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B29692851E24EE4A00654A17 /* Build configuration list for PBXNativeTarget "CasToDictionaryTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +413,7 @@
 				B29692871E24EE4A00654A17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
