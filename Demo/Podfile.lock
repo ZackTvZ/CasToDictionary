@@ -1,0 +1,12 @@
+PODS:
+  - CasToDictionary (0.0.5)
+
+DEPENDENCIES:
+  - CasToDictionary
+
+SPEC CHECKSUMS:
+  CasToDictionary: a2bdb2e1b0677a6822a7fe4c47bb54fb2911f279
+
+PODFILE CHECKSUM: 775f5a444603094561e2152dcfc9081f3565e254
+
+COCOAPODS: 1.2.0.beta.3
